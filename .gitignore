@@ -1,0 +1,6 @@
+.vs/
+*.mdf
+*.ldf
+*.suo
+*.userosscache
+*.sln.docstates

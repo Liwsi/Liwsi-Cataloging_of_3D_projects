@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Creation_Model.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Creation_Window.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Data.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Info.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Redaction_Model.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Redaction_Window.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Selection_model.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Settings_edit.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Settings_Select.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Creation_Model.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Creation_Window.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Data.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Info.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Redaction_Model.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Redaction_Window.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Selection_model.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Settings_edit.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Settings_Select.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

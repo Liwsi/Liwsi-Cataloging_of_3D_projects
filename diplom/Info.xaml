@@ -1,0 +1,29 @@
+﻿<Window x:Class="diplom.Info"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:diplom"
+        xmlns:svg="http://sharpvectors.codeplex.com/svg/sharpvectors" 
+        mc:Ignorable="d"
+        Title="CatProjects3D" Height="560" Width="450" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Icon="/логотип (1).png" >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="160"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="60"></RowDefinition>
+
+        </Grid.RowDefinitions>
+
+        <Image Grid.Row="0" Source="C:\Users\santa\source\repos\diplom\diplom\img\лого(ф).jpg" Margin="0 20 0 20"></Image>
+        <TextBlock Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontFamily="Calibri" FontSize="20" FontWeight="Bold"> О программе</TextBlock>
+        <TextBlock Grid.Row="2" TextWrapping="Wrap" FontFamily="Calibri" FontSize="16" TextAlignment="Center">3DCatForge представляет собой программное обеспечение, разработанное для эффективной каталогизации и управления проектами трехмерной печати. С функционалом по созданию, редактированию и управлению проектами, программа обеспечивает интуитивно понятный интерфейс для настройки параметров проектов.3DCatForge - послужит надежным инструментом для организации и оптимизации трехмерной печати.</TextBlock>
+        <TextBlock Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontFamily="Calibri" FontSize="20" FontWeight="Bold"> Автор</TextBlock>
+        <TextBlock Grid.Row="4" TextWrapping="Wrap" FontFamily="Calibri" FontSize="16" HorizontalAlignment="Center">Шелудько Александр Игоревич</TextBlock>
+        <Image Grid.Row="5" Source="C:\Users\santa\source\repos\diplom\diplom\img\logoCTT.png" Margin="0 10 0 10"></Image>
+
+    </Grid>
+</Window>

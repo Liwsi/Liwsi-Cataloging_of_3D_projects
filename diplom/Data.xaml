@@ -1,0 +1,114 @@
+﻿<Window x:Class="diplom.Data"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:diplom"
+        mc:Ignorable="d"
+        Title="Данные"  Height="720" Width="1280" MinWidth="1280" MinHeight="720" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded" Icon="/логотип (1).png">
+    <Grid >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="80"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Row="1" Grid.Column="0" Name="Projects" >
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="180"></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Grid.Row="0" Grid.Column="0" FontSize="24" Margin="0 0 10 0" HorizontalAlignment="Right" FontFamily="Calibri" VerticalAlignment="Center" Name="name_id_project">ID проекта</TextBlock>
+            <TextBlock Grid.Row="0" Grid.Column="1" FontSize="24" Margin="0 0 20 0" FontFamily="Calibri" VerticalAlignment="Center" Padding="10 0 0 0" Background="#e5e4e2" Name="id_project"></TextBlock>
+            <TextBlock Grid.Row="1" Grid.Column="0" FontSize="24" Margin="0 0 10 0" HorizontalAlignment="Right" FontFamily="Calibri" VerticalAlignment="Center">Принтер</TextBlock>
+            <TextBlock Grid.Row="1" Grid.Column="1" FontSize="24" Margin="0 0 20 0"  FontFamily="Calibri" VerticalAlignment="Center" Background="#e5e4e2" Padding="10 0 0 0" Name="id_printer"></TextBlock>
+            <TextBlock Grid.Row="2" Grid.Column="0" FontSize="24" Margin="0 0 10 0" HorizontalAlignment="Right" FontFamily="Calibri" VerticalAlignment="Center">Пластик</TextBlock>
+            <TextBlock Grid.Row="2" Grid.Column="1" FontSize="24" Margin="0 0 20 0"  FontFamily="Calibri" VerticalAlignment="Center" Background="#e5e4e2" Padding="10 0 0 0" Name="id_plastic"></TextBlock>
+            <TextBlock Grid.Row="3" Grid.Column="0" FontSize="24" Margin="0 0 10 0" HorizontalAlignment="Right" FontFamily="Calibri" VerticalAlignment="Center">ID модели</TextBlock>
+            <TextBlock Grid.Row="3" Grid.Column="1" FontSize="24" Margin="0 0 20 0" FontFamily="Calibri" VerticalAlignment="Center" Background="#e5e4e2" Padding="10 0 0 0" Name="id_model"></TextBlock>
+            <TextBlock Grid.Row="4" Grid.Column="0" FontSize="24" Margin="0 0 10 0" HorizontalAlignment="Right" FontFamily="Calibri" VerticalAlignment="Center">ID настроек</TextBlock>
+            <TextBlock Grid.Row="4" Grid.Column="1" FontSize="24" Margin="0 0 20 0" FontFamily="Calibri" VerticalAlignment="Center" Background="#e5e4e2" Padding="10 0 0 0" Name="id_setting"></TextBlock>
+            <TextBlock Grid.Row="5" Grid.Column="0" FontSize="24" Margin="0 0 10 0" HorizontalAlignment="Right" FontFamily="Calibri" VerticalAlignment="Center" >Название</TextBlock>
+            <TextBlock Grid.Row="5" Grid.Column="1" FontSize="24" Margin="0 0 20 0"  FontFamily="Calibri" VerticalAlignment="Center" Background="#e5e4e2" Padding="10 0 0 0" Name="name_project"></TextBlock>
+            <TextBlock Grid.Row="6" Grid.Column="0" FontSize="24" Margin="0 0 10 0" HorizontalAlignment="Right" FontFamily="Calibri" VerticalAlignment="Center">Автор</TextBlock>
+            <TextBlock Grid.Row="6" Grid.Column="1" FontSize="24" Margin="0 0 20 0" FontFamily="Calibri"  VerticalAlignment="Center" Background="#e5e4e2" Padding="10 0 0 0" Name="Author"></TextBlock>
+            <TextBlock Grid.Row="7" Grid.Column="0" FontSize="24" Margin="0 0 10 0" HorizontalAlignment="Right" FontFamily="Calibri" VerticalAlignment="Center">Дата</TextBlock>
+            <TextBlock Grid.Row="7" Grid.Column="1" FontSize="24" Margin="0 0 20 0" FontFamily="Calibri"    VerticalAlignment="Center" Background="#e5e4e2" Padding="10 0 0 0" Name="data_p"></TextBlock>
+            <TextBlock Grid.Row="8" Grid.Column="0" FontSize="24" Margin="0 0 10 0"  HorizontalAlignment="Right" FontFamily="Calibri" VerticalAlignment="Center">Комментарий</TextBlock>
+            <TextBlock Grid.Row="8" Grid.Column="1" FontSize="24" Margin="0 0 20 0" FontFamily="Calibri" VerticalAlignment="Center" Background="#e5e4e2" Padding="10 0 0 0" Name="comment_p"></TextBlock>
+            <TextBlock Grid.Row="9" Grid.Column="0" FontSize="24" Margin="0 0 10 0" HorizontalAlignment="Right" FontFamily="Calibri" VerticalAlignment="Center">Результат</TextBlock>
+            <TextBlock Grid.Row="9" Grid.Column="1" FontSize="24" Margin="0 0 20 0"  FontFamily="Calibri" VerticalAlignment="Center" Background="#e5e4e2" Padding="10 0 0 0" Name="result_p"></TextBlock>
+        </Grid>
+        <Grid Grid.Column="1" Grid.Row="1" Name="Model" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="180"></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition Height="57.404"></RowDefinition>
+            </Grid.RowDefinitions>
+           
+            <TextBlock Grid.Row="0" Grid.Column="0" FontSize="24" Margin="0 0 10 0" HorizontalAlignment="Right" FontFamily="Calibri" VerticalAlignment="Center">ID модели</TextBlock>
+            <TextBlock Grid.Row="0" Grid.Column="1" FontSize="24" Margin="0 0 20 0" FontFamily="Calibri" VerticalAlignment="Center" Background="#e5e4e2" Padding="10 0 0 0" Name="id_m"></TextBlock>
+            <TextBlock Grid.Row="1" Grid.Column="0" FontSize="24" Margin="0 0 10 0" HorizontalAlignment="Right" FontFamily="Calibri" VerticalAlignment="Center">Название</TextBlock>
+            <TextBlock Grid.Row="1" Grid.Column="1" FontSize="24" Margin="0 0 20 0" FontFamily="Calibri"  VerticalAlignment="Center" Background="#e5e4e2" Padding="10 0 0 0" Name="name_m"></TextBlock>
+            <TextBlock Grid.Row="2" Grid.Column="0" FontSize="24" Margin="0 0 10 0" HorizontalAlignment="Right" FontFamily="Calibri" VerticalAlignment="Center">Назначение</TextBlock>
+            <TextBlock Grid.Row="2" Grid.Column="1" FontSize="24" Margin="0 0 20 0" FontFamily="Calibri"  VerticalAlignment="Center" Background="#e5e4e2" Padding="10 0 0 0" Name="purpose_m"></TextBlock>
+            <TextBlock Grid.Row="3" Grid.Column="0" FontSize="24" Margin="0 0 10 0" HorizontalAlignment="Right" FontFamily="Calibri" VerticalAlignment="Center">Размер (x,y,z)</TextBlock>
+            <TextBlock Grid.Row="3" Grid.Column="1" FontSize="24" Margin="0 0 20 0" FontFamily="Calibri"  VerticalAlignment="Center" Background="#e5e4e2" Padding="10 0 0 0" Name="Size"></TextBlock>
+            <TextBlock Grid.Row="4" Grid.Column="0" FontSize="24" Margin="0 10 10 0" HorizontalAlignment="Right" FontFamily="Calibri" VerticalAlignment="Top">Описание</TextBlock>
+            <TextBlock Grid.Row="4" Grid.Column="1" Grid.RowSpan="3" FontSize="24" Margin="0 10 20 10" FontFamily="Calibri"  Background="#e5e4e2" TextWrapping="Wrap" Padding="10 0 0 0" Name="description_m"></TextBlock>
+            <TextBlock Grid.Row="7" Grid.Column="0" FontSize="24" Margin="0 10 10 0" HorizontalAlignment="Right" FontFamily="Calibri" VerticalAlignment="Top">Изображение</TextBlock>
+            <ListBox  Grid.Row="7" Grid.Column="1" Grid.RowSpan="3" FontSize="24"  FontFamily="Calibri" Background="#e5e4e2" HorizontalContentAlignment="Center" Margin="0 10 20 10" Name="image_list"></ListBox>
+        </Grid>
+        <Grid Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Background="#e5e4e2"></Grid>
+        <TextBlock Grid.Row="0" Grid.Column="0" FontSize="28" HorizontalAlignment="Center" FontFamily="Calibri" VerticalAlignment="Center">Проект</TextBlock>
+        <TextBlock  Grid.Row="0" Grid.Column="1" FontSize="28" HorizontalAlignment="Center" FontFamily="Calibri" VerticalAlignment="Center">Модель</TextBlock>
+        <TextBlock  Grid.Row="0" Grid.Column="2" FontSize="28" HorizontalAlignment="Center" FontFamily="Calibri" VerticalAlignment="Center">Настройки</TextBlock>
+        <DataGrid Grid.Row="1" Grid.Column="2" Margin="20 20 20 10" FontSize="18" FontFamily="Calibri" Background="#e5e4e2" Name="Data_setting"></DataGrid>
+
+        <Border Grid.Column="0" Grid.Row="0" Grid.RowSpan="3" Grid.ColumnSpan="1" BorderBrush="Black" BorderThickness="1"></Border>
+        <Border Grid.Column="2" Grid.Row="0" Grid.RowSpan="3" Grid.ColumnSpan="1" BorderBrush="Black" BorderThickness="1"></Border>
+        <Border Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3" BorderBrush="Black" BorderThickness="1"></Border>
+        <Border Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="3" BorderBrush="Black" BorderThickness="1"></Border>
+   
+        <Grid Grid.ColumnSpan="3" Grid.Row="2" Background="#e5e4e2" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Button Grid.Column="1" Style="{StaticResource RoundButton}"  Margin="20 10 20 10" FontFamily="Calibri" FontSize="26" BorderBrush="Black" BorderThickness="3" Name="upload_button" Click="upload_button_Click">Выгрузить</Button>
+            <Border Grid.Row="2" Grid.ColumnSpan="3" BorderBrush="Black" BorderThickness="1"></Border>
+
+        </Grid>
+       
+
+    </Grid>
+</Window>
